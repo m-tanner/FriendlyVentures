@@ -1,0 +1,12 @@
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: fv-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: fv-ip
+    networking.gke.io/managed-certificates: fv-cert
+spec:
+  backend:
+    serviceName: fv-service
+    servicePort: 80

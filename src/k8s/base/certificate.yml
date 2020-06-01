@@ -1,0 +1,10 @@
+---
+apiVersion: networking.gke.io/v1beta1
+kind: ManagedCertificate
+metadata:
+  name: fv-cert
+  labels:
+    app: fv-web-app
+spec:
+  domains:
+    - friendlyventures.io

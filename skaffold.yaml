@@ -1,0 +1,40 @@
+apiVersion: skaffold/v2beta1
+kind: Config
+metadata:
+  name: fv-skaffold
+build:
+  artifacts:
+    - image: gcr.io/four-track-friday-2/fv_web_app
+      context: .
+      docker:
+        dockerfile: src/docker/Dockerfile
+  tagPolicy:
+    gitCommit: {}
+  local: {}
+test:
+  - image: gcr.io/four-track-friday-2/fv_web_app
+    structureTests:
+      - tests/test_metadata.yml
+profiles:
+  - name: profile-dev
+    build:
+      local:
+        push: false
+    deploy:
+      kustomize:
+        paths:
+          - src/k8s/dev
+      kubeContext: minikube
+    activation:
+      - kubeContext: minikube
+  - name: profile-prod
+    build:
+      local:
+        push: true
+    deploy:
+      kustomize:
+        paths:
+          - src/k8s/prod
+      kubeContext: gke_four-track-friday-2_us-west1-a_cluster-2
+    activation:
+      - kubeContext: gke_four-track-friday-2_us-west1-a_cluster-2
