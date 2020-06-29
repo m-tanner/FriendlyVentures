@@ -1,0 +1,169 @@
+{
+  "main": {
+    "name": "Michael Tanner",
+    "occupation": "Software Engineer",
+    "description": "With a background in aerospace, I iteratively craft expressive code, solve hard problems, and help others alongside bright and motivated teammates.",
+    "image": "profilepic.jpg",
+    "bio": "Towards the end of 2018, I was asked to analyze and trend data, past and future, for a rocket engine igniter. I had two options to achieve this goal: do it the usual way or think big. Realizing this, I decided to automate the entire process. This display of ownership along with my excitement to learn something new resulted in a one-touch, web-based interaction to completely analyze and obtain a summary of any number of tests. It also taught me that I love coding and earned me the opportunity to internally transfer to a software team at Blue Origin. I've continued to discover that coding combines several of my favorite things: the iterative crafting of expressive phrases, problem solving, and helping others. Whether it’s a project leader, a colleague, or a client, code always seems to help someone and I relish the resulting sympathetic joy.",
+    "email": "tanner.mbt@gmail.com",
+    "phone": "+1 (206) 302-9623",
+    "address": {
+      "city": "Seattle",
+      "state": "Washington"
+    },
+    "website": "http://friendlyventures.com",
+    "resumedownload": "https://www.canva.com/design/DAD_jUHjFVg/1boN9yHPtsDbrsLtmPVTxw/view?utm_content=DAD_jUHjFVg&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://linkedin.com/in/m-tanner/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "http://github.com/m-tanner",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "University of Washington | Bothell",
+        "degree": "Graduate Certificate in Software Design & Development",
+        "graduated": "June 2021",
+        "description": "Beginning at UW this fall after having completed the prereq's at Bellevue College."
+      },
+      {
+        "school": "Bellevue College",
+        "degree": "Computer Science",
+        "graduated": "April 2019 - June 2020",
+        "description": "Received a 4.0 in CS 210, CS 211, and CS 212."
+      },
+      {
+        "school": "Purdue University",
+        "degree": "Mechanical Engineering, Global Engineering",
+        "graduated": "May 2017",
+        "description": "Founder of Purdue Barbell (10/13); Staff Reporter at The Purdue Exponent (01/17 – 04/17); Team Leader and Driver for Purdue Grand Prix (01/13 – 05/13); Starter and Safety Officer for Purdue Men’s Water Polo (08/12 – 12/16); Eagle Scout (08/11)"
+      },
+      {
+        "school": "Karlsruhe Institute of Technology",
+        "degree": "Mechanical Engineering",
+        "graduated": "January - August 2015",
+        "description": "Over the course of 7 months, I engaged in a German work and study abroad program."
+      }
+    ],
+    "work": [
+      {
+        "company": "Blue Origin",
+        "title": "Software Engineer",
+        "years": "March 2019 - Current",
+        "description": ""
+      },
+      {
+        "company": "Blue Origin",
+        "title": "Propulsion Engineer",
+        "years": "October 2017 - March 2019",
+        "description": ""
+      },
+      {
+        "company": "SpaceX",
+        "title": "Intern (3x)",
+        "years": "September 2015 - August 2017",
+        "description": ""
+      },
+      {
+        "company": "Mercedes-Benz",
+        "title": "Intern (2x)",
+        "years": "May 2014 - May 2015",
+        "description": ""
+      }
+    ],
+    "sides": [
+      {
+        "company": "4 Track Friday",
+        "title": "Software Engineer and Host",
+        "years": "July 2019 - Current",
+        "description": "Explore new music every week and alongside subscribers across the world at 4trackfriday.com"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Python",
+        "level": "75%"
+      },
+      {
+        "name": "Java",
+        "level": "50%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "15%"
+      },
+      {
+        "name": "AngularJs",
+        "level": "25%"
+      },
+      {
+        "name": "Jinja2",
+        "level": "60%"
+      },
+      {
+        "name": "Flask",
+        "level": "60%"
+      },
+      {
+        "name": "Spring",
+        "level": "30%"
+      },
+      {
+        "name": "CSS",
+        "level": "60%"
+      },
+      {
+        "name": "HTML5",
+        "level": "60%"
+      },
+      {
+        "name": "Git",
+        "level": "80%"
+      },
+      {
+        "name": "Docker",
+        "level": "60%"
+      },
+      {
+        "name": "Kubernetes",
+        "level": "75%"
+      },
+      {
+        "name": "Istio",
+        "level": "25%"
+      },
+      {
+        "name": "Gitlab CI/CD",
+        "level": "80%"
+      },
+      {
+        "name": "Terraform",
+        "level": "50%"
+      },
+      {
+        "name": "MongoDB",
+        "level": "40%"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": "40%"
+      },
+      {
+        "name": "Amazon Web Services",
+        "level": "40%"
+      },
+      {
+        "name": "Google Cloud Platform",
+        "level": "50%"
+      }
+    ]
+  }
+}
