@@ -1,5 +1,5 @@
 # build
-FROM node:14.3-alpine as build
+FROM node:8.9.4-alpine as build
 
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
@@ -9,8 +9,8 @@ COPY package.json ./
 COPY package-lock.json ./
 
 RUN echo Installing dependencies...
-RUN npm ci --no-optional --silent --no-fund
-RUN npm install -g react-scripts@3.4.1 --no-optional --silent --no-fund
+RUN npm install --production --only=prod --no-optional --no-fund --silent
+RUN npm install -g --production --only=prod react-scripts@3.4.1 --no-optional --no-fund --silent
 
 RUN echo Copying app files over...
 COPY . ./
