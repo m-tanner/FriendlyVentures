@@ -32,13 +32,13 @@
         "school": "University of Washington | Bothell",
         "degree": "Graduate Certificate in Software Design & Development",
         "graduated": "June 2021",
-        "description": "Beginning at UW this fall after having completed the prereq's at Bellevue College."
+        "description": "Beginning at UW this fall after having completed the prereq's at Bellevue College"
       },
       {
         "school": "Bellevue College",
         "degree": "Computer Science",
         "graduated": "April 2019 - June 2020",
-        "description": "Received a 4.0 in CS 210, CS 211, and CS 212."
+        "description": "Received a 4.0 in CS 210, CS 211, and CS 212"
       },
       {
         "school": "Purdue University",
@@ -50,7 +50,7 @@
         "school": "Karlsruhe Institute of Technology",
         "degree": "Mechanical Engineering",
         "graduated": "January - August 2015",
-        "description": "Over the course of 7 months, I engaged in a German work and study abroad program."
+        "description": "Over the course of 7 months, I engaged in a German work and study abroad program"
       }
     ],
     "work": [
@@ -84,85 +84,7 @@
         "company": "4 Track Friday",
         "title": "Software Engineer and Host",
         "years": "July 2019 - Current",
-        "description": "Explore new music every week and alongside subscribers across the world at 4trackfriday.com"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Python",
-        "level": "75%"
-      },
-      {
-        "name": "Java",
-        "level": "50%"
-      },
-      {
-        "name": "ReactJs",
-        "level": "15%"
-      },
-      {
-        "name": "AngularJs",
-        "level": "25%"
-      },
-      {
-        "name": "Jinja2",
-        "level": "60%"
-      },
-      {
-        "name": "Flask",
-        "level": "60%"
-      },
-      {
-        "name": "Spring",
-        "level": "30%"
-      },
-      {
-        "name": "CSS",
-        "level": "60%"
-      },
-      {
-        "name": "HTML5",
-        "level": "60%"
-      },
-      {
-        "name": "Git",
-        "level": "80%"
-      },
-      {
-        "name": "Docker",
-        "level": "60%"
-      },
-      {
-        "name": "Kubernetes",
-        "level": "75%"
-      },
-      {
-        "name": "Istio",
-        "level": "25%"
-      },
-      {
-        "name": "Gitlab CI/CD",
-        "level": "80%"
-      },
-      {
-        "name": "Terraform",
-        "level": "50%"
-      },
-      {
-        "name": "MongoDB",
-        "level": "40%"
-      },
-      {
-        "name": "PostgreSQL",
-        "level": "40%"
-      },
-      {
-        "name": "Amazon Web Services",
-        "level": "40%"
-      },
-      {
-        "name": "Google Cloud Platform",
-        "level": "50%"
+        "description": "Explore new music every week and alongside subscribers across the world at <a href=\"https://4trackfriday.com\" target=\"_blank\" rel=\"noopener noreferrer\">4trackfriday.com</a>"
       }
     ]
   }

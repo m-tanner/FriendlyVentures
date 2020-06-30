@@ -19,7 +19,7 @@ class Resume extends Component {
             var sides = this.props.data.sides.map(function (sides) {
                 return <div key={sides.company}><h3>{sides.company}</h3>
                     <p className="info">{sides.title}<span>&bull;</span> <em className="date">{sides.years}</em></p>
-                    <p>{sides.description}</p>
+                    <p dangerouslySetInnerHTML={{ __html: sides.description}}></p>
                 </div>
             })
         }
