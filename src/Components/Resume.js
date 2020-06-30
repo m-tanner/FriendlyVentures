@@ -1,7 +1,13 @@
 import React, {Component} from 'react';
+import dompurify from 'dompurify';
+
 
 class Resume extends Component {
     render() {
+
+        const sanitizer = dompurify.sanitize;
+        const config = { ALLOWED_TAGS: ['p', 'a', '#text'], ADD_ATTR: ['target', 'rel'], KEEP_CONTENT: false };
+
 
         if (this.props.data) {
             var education = this.props.data.education.map(function (education) {
@@ -19,7 +25,7 @@ class Resume extends Component {
             var sides = this.props.data.sides.map(function (sides) {
                 return <div key={sides.company}><h3>{sides.company}</h3>
                     <p className="info">{sides.title}<span>&bull;</span> <em className="date">{sides.years}</em></p>
-                    <p dangerouslySetInnerHTML={{ __html: sides.description}}></p>
+                    <p dangerouslySetInnerHTML={{ __html: sanitizer(sides.description, config)}}/>
                 </div>
             })
         }
