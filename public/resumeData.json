@@ -91,6 +91,12 @@
         "title": "Software Engineer and Product Manager",
         "years": "June 2020 - Current",
         "description": "Re-imagined MySpace's \"my top 8\" for quarantine, where it's recommended to only see five people at a time, at <a href=\"https://myquarantine5.com\" target=\"_blank\" rel=\"noopener noreferrer\">myquarantine5.com</a>"
+      },
+      {
+        "company": "Friendly Ventures",
+        "title": "Entrepreneur",
+        "years": "July 2019 - Current",
+        "description": "Built this résumé website in React, continuously deploying it with Skaffold and hosting it on Google Cloud Platform's Kubernetes"
       }
     ]
   }
