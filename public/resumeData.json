@@ -12,7 +12,7 @@
       "state": "Washington"
     },
     "website": "https://friendlyventures.com",
-    "resumedownload": "https://www.canva.com/design/DAEAj1bPiCU/16_acBe4hTJC_hsVUM2jnA/view?utm_content=DAEAj1bPiCU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+    "resumedownload": "https://www.canva.com/design/DAEB4Hh-3rc/oeF4iQtnPE5S5I7a2Pb07w/view?utm_content=DAEB4Hh-3rc&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
     "social": [
       {
         "name": "linkedin",
@@ -96,7 +96,7 @@
         "company": "Friendly Ventures",
         "title": "Entrepreneur",
         "years": "July 2019 - Current",
-        "description": "Built this résumé website in React, continuously deploying it with Skaffold and hosting it on Google Cloud Platform's Kubernetes"
+        "description": "Built this résumé website in React, continuously deploying it with Skaffold and hosting it on Google Cloud Platform's Kubernetes (as with the above two)"
       }
     ]
   }
