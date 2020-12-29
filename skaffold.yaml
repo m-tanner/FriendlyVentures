@@ -1,4 +1,4 @@
-apiVersion: skaffold/v2beta1
+apiVersion: skaffold/v2beta10
 kind: Config
 metadata:
   name: fv-skaffold
@@ -35,6 +35,6 @@ profiles:
       kustomize:
         paths:
           - src/k8s/prod
-      kubeContext: gke_four-track-friday-2_us-west1-a_cluster-2
+      kubeContext: production
     activation:
-      - kubeContext: gke_four-track-friday-2_us-west1-a_cluster-2
+      - kubeContext: production
