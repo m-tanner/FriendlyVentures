@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Deploying to Google App Engine
+
+```
+# you have to actually build it
+npm run build
+
+# use the right project
+gcloud config set project friendly-ventures-1
+
+# send it!
+gcloud app deploy
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
