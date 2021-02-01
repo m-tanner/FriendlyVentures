@@ -2,9 +2,9 @@
   "main": {
     "name": "Michael Tanner",
     "occupation": "Software Engineer",
-    "description": "With a background in aerospace, I iteratively craft expressive code, solve hard problems, and help others alongside bright and motivated teammates.",
+    "description": "With a background in aerospace engineering, I iteratively craft expressive code, solve hard problems, and help others alongside bright and motivated teammates.",
     "image": "profilepic.jpg",
-    "bio": "Towards the end of 2018, I was asked to analyze and trend data, past and future, for a rocket engine igniter. I had two options to achieve this goal: do it the usual way or think big. Realizing this, I decided to automate the entire process. This display of ownership along with my excitement to learn something new resulted in a one-touch, web-based interaction to completely analyze and obtain a summary of any number of tests. It also taught me that I love coding and earned me the opportunity to internally transfer to a software team at Blue Origin. I've continued to discover that coding combines several of my favorite things: the iterative crafting of expressive phrases, problem solving, and helping others. Whether it’s a project leader, a colleague, or a client, code always seems to help someone and I relish the resulting sympathetic joy.",
+    "bio": "Towards the end of 2018, I was asked to analyze and trend data, past and future, for a rocket engine igniter. I had two options to achieve this goal: do it the usual way or think big. Realizing this, I decided to automate the entire process. This display of ownership along with my excitement to learn something new resulted in a one-touch, web-based interaction to completely analyze and obtain a summary of any number of tests. Recently I leapt into the tech industry, where I've continued to discover that coding combines several of my favorite things: the iterative crafting of expressive phrases, problem solving, and helping others. Whether it’s a project leader, a colleague, or a client, code always seems to help someone and I relish the resulting sympathetic joy.",
     "email": "tanner.mbt@gmail.com",
     "phone": "+1 (206) 302-9623",
     "address": {
@@ -29,12 +29,6 @@
   "resume": {
     "education": [
       {
-        "school": "University of Washington | Bothell",
-        "degree": "Graduate Certificate in Software Design & Development",
-        "graduated": "June 2021",
-        "description": "Beginning at UW this fall after having completed the prereq's at Bellevue College"
-      },
-      {
         "school": "Bellevue College",
         "degree": "Computer Science",
         "graduated": "April 2019 - June 2020",
@@ -55,13 +49,19 @@
     ],
     "work": [
       {
-        "company": "Blue Origin",
-        "title": "Software Engineer",
-        "years": "March 2019 - Current",
+        "company": "Axon",
+        "title": "Software Engineer II",
+        "years": "September 2020 - Current",
         "description": ""
       },
       {
         "company": "Blue Origin",
+        "title": "Software Engineer",
+        "years": "March 2019 - August 2020",
+        "description": ""
+      },
+      {
+        "company": "",
         "title": "Propulsion Engineer",
         "years": "October 2017 - March 2019",
         "description": ""
@@ -87,16 +87,10 @@
         "description": "Explore new music every week and alongside subscribers across the world at <a href=\"https://4trackfriday.com\" target=\"_blank\" rel=\"noopener noreferrer\">4trackfriday.com</a>"
       },
       {
-        "company": "My Quarantine 5",
-        "title": "Software Engineer and Product Manager",
-        "years": "June 2020 - Current",
-        "description": "Re-imagined MySpace's \"my top 8\" for quarantine, where it's recommended to only see five people at a time, at <a href=\"https://myquarantine5.com\" target=\"_blank\" rel=\"noopener noreferrer\">myquarantine5.com</a>"
-      },
-      {
         "company": "Friendly Ventures",
         "title": "Entrepreneur",
         "years": "July 2019 - Current",
-        "description": "Built this résumé website in React, continuously deploying it with Skaffold and hosting it on Google Cloud Platform's Kubernetes (as with the above two)"
+        "description": "Built this résumé website in React, continuously deploying it with Skaffold and hosting it on Google Cloud Platform's Kubernetes (as with the above)"
       }
     ]
   }

@@ -45,7 +45,7 @@ class About extends Component {
                                 <p>
                                     <a href="#calendly" className={"smoothscroll button"}>
                                         <i className="fa fa-calendar"/>
-                                        Book a chat</a>
+                                        Book a Chat</a>
                                 </p>
                             </div>
                         </div>
