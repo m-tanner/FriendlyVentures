@@ -9,3 +9,13 @@ createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 );
+
+// The pre-2026 site registered a cache-first service worker; make sure any
+// surviving registration is removed even if the kill-switch worker at
+// /service-worker.js hasn't run yet.
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .getRegistrations()
+    .then((registrations) => registrations.forEach((r) => r.unregister()))
+    .catch(() => {});
+}

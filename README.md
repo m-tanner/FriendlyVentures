@@ -50,3 +50,7 @@ Notes:
   manifests.
 - `"gcp-build": ""` in `package.json` stops App Engine's buildpack from re-running
   the build in the cloud; always run `npm run build` locally before deploying.
+- `public/service-worker.js` is a **kill-switch** for the cache-first service
+  worker the pre-2026 CRA site registered in visitors' browsers. It must keep
+  being served (as JavaScript, uncached — see its `app.yaml` handler) or
+  returning visitors get a stale, broken cached site. Do not remove it.
