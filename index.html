@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Michael Tanner · Senior Software Engineer</title>
+    <meta
+      name="description"
+      content="Michael Tanner is a Seattle-based Senior Software Engineer at Axon. Ex-SpaceX, ex-Blue Origin. Tech lead of Axon Community Request with Ring, from greenfield design to public launch."
+    />
+    <link rel="canonical" href="https://friendlyventures.io/" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfaf8" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#101418" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Michael Tanner · Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Ex-SpaceX, ex-Blue Origin. I like ambitious projects that need someone to define the product, draw the architecture, write the code, and lead the team."
+    />
+    <meta property="og:url" content="https://friendlyventures.io/" />
+    <meta property="og:image" content="https://friendlyventures.io/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Michael Tanner",
+        "jobTitle": "Senior Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Axon" },
+        "url": "https://friendlyventures.io/",
+        "email": "mailto:tanner.mbt@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Seattle",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/m-tanner/",
+          "https://github.com/m-tanner/"
+        ]
+      }
+    </script>
+
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          var theme =
+            stored === 'dark' || stored === 'light'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light';
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

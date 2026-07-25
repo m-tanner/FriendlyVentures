@@ -1,0 +1,199 @@
+{
+  "main": {
+    "name": "Michael Tanner",
+    "role": "Senior Software Engineer",
+    "company": "Axon",
+    "location": "Seattle, Washington",
+    "tagline": "Ex-SpaceX, ex-Blue Origin. I like ambitious projects that need someone to define the product, draw the architecture, write the code, and lead the team.",
+    "bio": [
+      "I started in aerospace: supporting launches at SpaceX and assembling, inspecting, and testing BE-4 — the most powerful liquid oxygen / liquid methane rocket engine to date — at Blue Origin. Toward the end of 2018, I was asked to analyze and trend igniter test data, and instead of doing it the usual way I automated the entire process into a one-touch web service. That project pulled me into software for good.",
+      "Since then I've built search infrastructure used by public safety agencies worldwide, been the founding engineer at a startup, and most recently shipped Axon Community Request with Amazon Ring as tech lead — taking the project from greenfield design through public launch over five years, delivering a privacy-preserving, auditable, courtroom-ready evidence pipeline."
+    ],
+    "image": "/images/headshot.jpg",
+    "email": "tanner.mbt@gmail.com",
+    "phone": "+1 (206) 302-9623",
+    "website": "https://friendlyventures.io",
+    "resumeDownload": "/MichaelTanner_Resume.pdf",
+    "calendly": "https://calendly.com/m-tanner2",
+    "social": [
+      { "name": "GitHub", "url": "https://github.com/m-tanner/" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/m-tanner/" }
+    ],
+    "topSkills": ["Agentic AI development", "Large language models", "Python"],
+    "toolbox": [
+      "Go",
+      "Java",
+      "Solr / Lucene",
+      "Kubernetes",
+      "Terraform",
+      "AWS",
+      "Google Cloud",
+      "GitLab CI"
+    ],
+    "languages": [
+      { "name": "English", "level": "Native" },
+      { "name": "German", "level": "Professional working proficiency" },
+      { "name": "Chinese", "level": "Elementary" }
+    ],
+    "honors": [
+      "Rod and Connie Radovanovic Scholarship",
+      "Space Shuttle Scholarship",
+      "Eagle Scout Scholarship"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Axon",
+      "title": "Senior Software Engineer",
+      "start": "Jul 2024",
+      "end": "Present",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Tech lead of the five-engineer team that delivered Axon Community Request with Ring — the publicly announced Axon–Ring partnership that lets verified public safety agencies invite Ring camera owners to securely share video evidence, with full chain of custody preserved into Axon Evidence.",
+        "Resurrected a previously paused greenfield project and rolled it out to Ring Neighbors-Verified agencies across the US, owning system design, sprint execution, and code review while partnering with product, legal, and partner engineering & security teams.",
+        "Led the team that built AI-Powered Crash Diagramming during Axon's company-wide Gen-AI hackathon — the prototype was selected by Axon's CEO roundtable and voted a top-3 customer favorite at IACP.",
+        "Built and shipped the NCIC Store backend for Axon's records-management product; within weeks of launch, 103 Ft. Lauderdale PD officers had completed 600+ imports (~45/day), with five more Florida agencies in UAT."
+      ]
+    },
+    {
+      "company": "Axon",
+      "title": "Software Engineer II",
+      "start": "Jun 2022",
+      "end": "Jul 2024",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Co-owned search and indexing for Axon Evidence, the digital evidence management system used by public safety agencies worldwide, across 9 production Solr clusters spanning US, EU, and government/regulated environments.",
+        "Migrated production search infrastructure to Solr 8 / Java 11 with remote-collection joins, personally rolling out 3 of 9 clusters — including the largest — and rebuilding the migration tooling to handle simultaneous version-and-topology changes.",
+        "Shipped Lucene's unified highlighter to production and migrated transcript search, cutting per-query latency ~4× (≈2s to ≈0.5s) with no regressions.",
+        "Led after-action reviews for production incidents, partnering with SRE, infrastructure, and engineering executives on root cause."
+      ]
+    },
+    {
+      "company": "DevZero",
+      "title": "Founding Engineer",
+      "start": "Jan 2022",
+      "end": "Jun 2022",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Founding technical staff at a Seattle-based startup building ephemeral, ready-to-code, on-demand cloud developer environments.",
+        "Designed and shipped end-to-end features in Go across the platform during the company's earliest months."
+      ]
+    },
+    {
+      "company": "Axon",
+      "title": "Software Engineer II",
+      "start": "Sep 2020",
+      "end": "Jan 2022",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Lead engineer on the greenfield design of what shipped publicly in 2025 as Axon Community Request with Ring — owned product definition, system architecture, and detailed design for a new way for police to collect digital evidence from communities.",
+        "Defined the chain-of-custody model, geo-targeted request flow, and voluntary-share/anonymous-decline pattern that became the foundation of the shipped product.",
+        "Partnered with product, legal, and security stakeholders to scope a system that handles community-sourced digital evidence at scale while preserving resident privacy and auditability."
+      ]
+    },
+    {
+      "company": "Blue Origin",
+      "title": "Software Engineer",
+      "start": "Mar 2019",
+      "end": "Aug 2020",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Cut 6,000 engineering-hours per year by building a web service for time-series analysis of engine test data — Python and MongoDB back end, Flask front end, hosted on Kubernetes with GitLab CI.",
+        "Reduced data processing time from 210 to 20 minutes for 1,000+ test sessions by leveraging multiprocessing.",
+        "Slashed the cost of searching engineering drawings by 80% using Terraform, GitLab CI, Python, AWS Lambda, API Gateway, and Kubernetes; cut business-intelligence extract endpoint costs by 99% with Java and Spring Boot on AWS.",
+        "Halved post-test visual inspection time by writing Python to operate a custom-built robotic inspection tool."
+      ]
+    },
+    {
+      "company": "Blue Origin",
+      "title": "Propulsion Engineer",
+      "start": "Oct 2017",
+      "end": "Mar 2019",
+      "location": "Seattle, WA",
+      "bullets": [
+        "Assembled, inspected, troubleshot, and conducted tests on BE-4, the most powerful liquid oxygen / liquid methane rocket engine to date.",
+        "Developed a valve manifold for the BE-4 ignition system — CAD and GD&T drawings in Creo, manufacturing by exotic-metal 3D printing and traditional machining.",
+        "Introduced semi-automated inspection tracking that enabled the first-ever two BE-4 tests in a single day."
+      ]
+    },
+    {
+      "company": "SpaceX",
+      "title": "Associate Launch Engineer",
+      "start": "May 2017",
+      "end": "Aug 2017",
+      "location": "Cape Canaveral, FL",
+      "bullets": [
+        "Predicted and analyzed inter-stage purge heat exchanger performance across launch sites using heat transfer models.",
+        "Planned, procured, and installed secondary cooling supply water for helium hydropacs."
+      ]
+    }
+  ],
+  "earlier": [
+    {
+      "org": "Maurice J. Zucrow Laboratories",
+      "role": "Undergraduate Research Assistant",
+      "years": "2016 – 2017",
+      "note": "Designed, fabricated, and analyzed a sub-scale bi-propellant test stand for hypergolic combustor research at Purdue."
+    },
+    {
+      "org": "SpaceX",
+      "role": "Manufacturing Engineering Intern",
+      "years": "2016",
+      "note": "Final-assembly integration for the bi-propellant throttle valve in Hawthorne, CA — cut test stand downtime in one case by 5 days."
+    },
+    {
+      "org": "SpaceX",
+      "role": "Ground Support Equipment Engineering Intern",
+      "years": "2015",
+      "note": "Designed, fabricated, and activated a warming purge system for Merlin engine test stands in McGregor, TX."
+    },
+    {
+      "org": "Daimler AG",
+      "role": "Body Shop Planning Intern",
+      "years": "2015",
+      "note": "Takt time simulations for body shop planning in Sindelfingen, Germany."
+    },
+    {
+      "org": "Mercedes-Benz USA",
+      "role": "Paint Process Engineering Intern",
+      "years": "2014",
+      "note": "Statistical gauge analysis and downtime tooling in Vance, AL."
+    }
+  ],
+  "sideProjects": [
+    {
+      "name": "4 Track Friday",
+      "role": "Creator, engineer & host",
+      "years": "2019 – Present",
+      "url": "https://4trackfriday.com",
+      "description": "Explore new music every week alongside subscribers across the world — four tracks, every Friday."
+    },
+    {
+      "name": "Friendly Ventures",
+      "role": "This site",
+      "years": "2019 – Present",
+      "url": "https://github.com/m-tanner/FriendlyVentures",
+      "description": "The umbrella for my side projects, and this résumé site itself — rebuilt in 2026 with React 19 and Vite, deployed on Google App Engine."
+    }
+  ],
+  "education": [
+    {
+      "school": "Purdue University",
+      "degree": "BS, Mechanical Engineering · Global Engineering",
+      "years": "2012 – 2017",
+      "description": "Founder of Purdue Barbell, staff reporter at The Purdue Exponent, starter and safety officer for Purdue Men's Water Polo, Eagle Scout."
+    },
+    {
+      "school": "Bellevue College",
+      "degree": "Computer Science",
+      "years": "2019 – 2020",
+      "description": "Post-baccalaureate computer science coursework — 4.0 across the CS sequence."
+    },
+    {
+      "school": "Karlsruhe Institute of Technology",
+      "degree": "Mechanical Engineering",
+      "years": "2015",
+      "description": "Seven-month work-and-study-abroad program in Karlsruhe, Germany."
+    }
+  ]
+}

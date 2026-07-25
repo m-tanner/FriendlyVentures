@@ -1,32 +1,42 @@
-runtime: nodejs12
+runtime: nodejs22
 
 instance_class: F1
 automatic_scaling:
   max_instances: 1
 
-entrypoint: "host"
+# Fallback only: every URL below is served statically by Google Frontend,
+# so no instance should ever spin up for normal traffic.
+entrypoint: node server.js
+
 handlers:
-  - url: /css
-    static_dir: build/css
+  - url: /assets
+    static_dir: dist/assets
+    secure: always
+    expiration: 365d
 
   - url: /images
-    static_dir: build/images
+    static_dir: dist/images
+    secure: always
+    expiration: 7d
 
-  - url: /js
-    static_dir: build/js
+  - url: /manifest\.webmanifest$
+    static_files: dist/manifest.webmanifest
+    upload: dist/manifest\.webmanifest
+    mime_type: application/manifest+json
+    secure: always
 
-  - url: /static/js/(.*)
-    static_files: build/static/js/\1
-    upload: build/static/js/(.*)
+  - url: /(favicon\.ico|favicon\.svg|apple-touch-icon\.png|icon-192\.png|icon-512\.png|og\.png|robots\.txt|MichaelTanner_Resume\.pdf)$
+    static_files: dist/\1
+    upload: dist/(favicon\.ico|favicon\.svg|apple-touch-icon\.png|icon-192\.png|icon-512\.png|og\.png|robots\.txt|MichaelTanner_Resume\.pdf)$
+    secure: always
+    expiration: 1d
 
-  - url: /static/css/(.*)
-    static_files: build/static/css/\1
-    upload: build/static/css/(.*)
-
-  - url: /(.*\.(json|ico|js))$
-    static_files: build/\1
-    upload: build/.*\.(json|ico|js)$
-
+  # index.html hard-references content-hashed bundles, so it must never be
+  # cached: a stale copy would point at assets that no longer exist.
   - url: .*
-    static_files: build/index.html
-    upload: build/index.html
+    static_files: dist/index.html
+    upload: dist/index\.html
+    secure: always
+    expiration: 0s
+    http_headers:
+      Cache-Control: no-cache

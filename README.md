@@ -1,83 +1,52 @@
-# FriendlyVentures
+# Friendly Ventures
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The personal site of Michael Tanner, live at [friendlyventures.io](https://friendlyventures.io/).
 
-# Deploying to Google App Engine
+A single-page resume site built with **React 19 + Vite**, served as pure static files
+from **Google App Engine** (standard environment, `nodejs22`). All content is
+data-driven from a single JSON file.
 
+## Editing content
+
+Everything on the page comes from [`src/data/resume.json`](src/data/resume.json) —
+experience, projects, education, skills, contact details. Edit it, rebuild, redeploy.
+
+The downloadable PDF lives at `public/MichaelTanner_Resume.pdf`. To refresh it, replace
+that file (it is copied verbatim into the build).
+
+## Development
+
+```bash
+npm install
+npm run dev        # dev server at http://localhost:5173
+npm test           # vitest + testing-library
+npm run build      # production build into dist/
+npm run preview    # serve the production build locally (Vite)
+npm run host       # serve dist/ with the zero-dep fallback server (PORT=8080)
 ```
-# you have to actually build it
+
+## Deploying
+
+```bash
 npm run build
 
-# use the right project
 gcloud config set project friendly-ventures-1
-
-# send it!
-gcloud app deploy
+gcloud app deploy --no-promote   # deploy a preview version first
+# check the version URL printed by the command above, then:
+gcloud app services set-traffic default --splits <VERSION>=1
 ```
 
-## Available Scripts
+Or `gcloud app deploy` alone to promote immediately.
 
-In the project directory, you can run:
+Notes:
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- `app.yaml` serves everything statically via Google Frontend — HTTPS is forced,
+  hashed assets under `/assets` are cached for a year, `index.html` is served
+  `no-cache` so a redeploy never leaves stale asset hashes behind, and no
+  instance runs for normal traffic. The `entrypoint` (`node server.js`) is a
+  zero-dependency Node static-file server used only as a fallback; it serves
+  `dist/` with the same SPA catch-all behaviour and needs no npm packages.
+- `.gcloudignore` uploads only `dist/`, `app.yaml`, `server.js`, and the package
+  manifests.
+- `"gcp-build": ""` in `package.json` stops App Engine's buildpack from re-running
+  the build in the cloud; always run `npm run build` locally before deploying.
